@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IBHS</title>
+        <link rel="stylesheet" type="text/css" href="style.css">      
+        <script type="text/javascript" src="javascript.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">       
+    </head>
+    <body>
+<!-- top left grid -->
+    <div class="grid">
+        <div class="box1">            
+            <li ><a id="orderLi1" href="index.html">Home Page</a></li> 
+            
+                 
+        </div>
+        <div class="box2">
+            <img src="./img/sbc-logo.png" class="responsive3">
+        <!-- Leaving it blank   -->  
+        </div>   
+        <div class="box3">
+            <h1 id="Orderpag">Iglesia Bautista Hispana Salem</h1>
+            <li id="rightfont1">113 N Grimes St</li>
+            <li id="rightfont1">Dalton, GA 30721</li>
+            <li id="rightfont1">(706) 618-4421</li>
+        </div>
+     </div>
+<!-- bottom grid -->
+<div class="theLine"></div>
+    <div class="grid">
+        <div class="box4">
+            <h1 id="Orderpag">Categories</h1>
+            <ul id="category_list">      
+                <li class="Appetizers"><a id="orderLi" href="order.html" class="current" onclick="swapContent('')">Appetizers</a></li>
+
+                <li class="SoupsSalads"><a id="orderLi" href="#soups-salads" href="#" onclick="swapContent('operation2')">Soups & Salads</a></li>
+
+                <li class="Sandwiches"><a id="orderLi" href="#sandwiches" onclick="swapContent('operation3')">Sandwiches</a></li>       
+            </ul>
+        </div>
+        <!-- In the middle -->
+        <div class="box5">
+            <div id="main_place">
+                <h1 id="Orderpag">Appetizers</h1>
+            <div class="item_header">     
+                <div href="#" onclick="toggle_visibility('foo');">
+                
+                <h3>Bacon Wrapped Quail</h3>                     
+                <span>Four boneless quail breasts wrapped in bacon served with barley risotto and balsamic glaze</span>
+                </div>
+
+            <div class="item_price">16.00</div>
+                <!-- <div class="item-info-right">
+                </div> delete on last, may neeed?-->
+            </div>
+            <div id="foo">
+                <div class="order_buttons">                           
+                    <div class="qtyfield">
+                    <label>Quantity</label>
+                    <input type="text" name="quantity" class="quantity" value="1">
+                    </div>                           
+                    <button type="submit" class="btn btn-success">
+                        <span>Add to Order</span>
+                    </button>                           
+                </div>                                                    
+            <div>
+                <h4 class="special-instructions item-subhead">Add Special Instructions</h4>
+                <textarea class="" name="notes"></textarea>
+            </div> 
+        </div>
+        <div class="theLine"></div>
+            
+            <!-- Item 2, appetizers......................................... -->
+        <div class="item_header">                                           
+            <div href="#" onclick="toggle_visibility1('foo1');"> 
+
+                <h3>Pan Seared Ahi Tuna</h3>                            
+                <span>Pan seared Ahi Tuna drizzled with sesame oil served with wasabi, sriracha sauce and garnished with cucumber, ginger and red bell pepper salad</span>
+            </div>
+            <div class="item_price">13.00</div>
+            <!-- <div class="item-info-right"></div> -->
+        </div>
+            <div id="foo1">
+                <div class="order_buttons">                          
+                    <div class="qtyfield">
+                    <label>Quantity</label>
+                    <input type="text" name="quantity" class="quantity" value="1">
+                    </div>                         
+                    <button type="submit" class="btn btn-success">
+                    <span>Add to Order</span>
+                    </button>                          
+                </div>                                                   
+                <div>
+                <h4 class="special-instructions item-subhead">Add Special Instructions</h4>
+                <textarea class="" name="notes"></textarea>
+                </div>
+            </div>
+            <div class="theLine"></div>
+<!-- item 3, appetizers......................................... -->
+                <div class="item_header">                   
+                <div href="#" onclick="toggle_visibility2('foo2');">             
+                <h3>Lobster, Crab, Shrimp, Spinach & Artichoke Dip</h3> 
+                <span>Creamy dip made with lobster, crab, and shrimp, fresh spinach, artichoke hearts, and topped with shredded cheese. Served with tortilla chips</span>
+                </div>
+            <div class="item_price">14.00</div>
+                <!-- <div class="item-info-right"> -->
+                </div>
+            <!-- </div> -->
+            <div id="foo2">
+                <div class="order_buttons">                                
+                    <div class="qtyfield">
+                    <label>Quantity</label>
+                    <input type="text" name="quantity" class="quantity" value="1">
+                    </div>                               
+                    <button type="submit" class="btn btn-success">
+                        <span>Add to Order</span>
+                    </button>                                
+                </div>                                                       
+            <div>
+                <h4 class="special-instructions item-subhead">Add Special Instructions</h4>
+                <textarea class="" name="notes"></textarea>
+
+            </div>              
+            </div><div class="theLine"></div></div>
+<!-- Now Soups -->
+            <div id="complete" style="display:none;">
+                <div id="operation1">
+                </div>
+                <div id="operation2">    
+                    <h1 id="Orderpag">Soups & Salads</h1>
+                <div class="item_header">                                       
+                <div href="#" onclick="toggle_visibility('foo');">             
+                <h3>House Salad</h3>                    
+                <span>A bed of mixed greens topped with onion, tomato, cucumber, bleu cheese or cheddar</span>
+                </div>
+            <div class="item_price">6.00</div>
+                <div class="item-info-right">
+                </div>
+            </div>
+            <div id="foo">
+                <div class="order_buttons">                 
+                    <div class="qtyfield">
+                    <label>Quantity</label>
+                    <input type="text" name="quantity" class="quantity" value="1">
+                    </div>                  
+                    <button type="submit" class="btn btn-success">
+                        <span>Add to Order</span>
+                    </button>                    
+                </div>                                             
+            <div>
+                <h4 class="special-instructions item-subhead">Add Special Instructions</h4>
+                <textarea class="" name="notes"></textarea>
+            </div> 
+            </div><div class="theLine"></div>
+            <!-- soups item2 -->
+        <div class="item_header">                                                
+            <div href="#" onclick="toggle_visibility1('foo1');">                       
+                <h3>Chef Salad</h3>               
+                <span>A bed of romaine lettuce topped with onions, tomatoes, chopped egg, turkey, ham and bacon with cheddar cheese</span>
+            </div>
+            <div class="item_price">12.00</div>
+            <div class="item-info-right"></div>
+        </div>
+            <div id="foo1">
+                <div class="order_buttons">                              
+                    <div class="qtyfield">
+                    <label>Quantity</label>
+                    <input type="text" name="quantity" class="quantity" value="1">
+                    </div>                              
+                    <button type="submit" class="btn btn-success">
+                    <span>Add to Order</span>
+                    </button>                         
+                </div>                                        
+                <div>
+                <h4 class="special-instructions item-subhead">Add Special Instructions</h4>
+                <textarea class="" name="notes"></textarea>
+                </div></div><div class="theLine"></div>
+              <!-- item 3 in soups  -->               
+                <div class="item_header">                                        
+                <div href="#" onclick="toggle_visibility2('foo2');">           
+                <h3>Tossed Greek Salad</h3>               
+                <span>A bed of romaine lettuce topped with onions, pepperoncini, Kalamata olives & feta cheese</span>
+                </div>
+            <div class="item_price">8.00</div>
+                <div class="item-info-right">
+                </div>
+            </div>
+            <div id="foo2">
+                <div class="order_buttons">                     
+                    <div class="qtyfield">
+                    <label>Quantity</label>
+                    <input type="text" name="quantity" class="quantity" value="1">
+                    </div>                       
+                    <button type="submit" class="btn btn-success">
+                        <span>Add to Order</span>
+                    </button>                          
+                </div>                                                  
+            <div>
+                <h4 class="special-instructions item-subhead">Add Special Instructions</h4>
+                <textarea class="" name="notes"></textarea>
+            </div> 
+                </div><div class="theLine"></div>
+                </div> 
+<!-- now the sandwish -->
+                <div id="operation3">
+                    <h1 id="Orderpag">Sandwiches</h1>
+            <div class="item_header">                                    
+                <div href="#" onclick="toggle_visibility('foo');">          
+                <h3>Kentucky Hot Brown</h3>               
+                <span>Grilled ham & turkey on an open faced sandwich covered in white cheese sauce topped with cheddar cheese, bacon, roma tomatoes & paprika</span>
+                </div>
+            <div class="item_price">9.00</div>
+                <div class="item-info-right">
+                </div>
+            </div>
+            <div id="foo">
+                <div class="order_buttons">                    
+                    <div class="qtyfield">
+                    <label>Quantity</label>
+                    <input type="text" name="quantity" class="quantity" value="1">
+                    </div>                     
+                    <button type="submit" class="btn btn-success">
+                        <span>Add to Order</span>
+                    </button>                      
+                </div>                                               
+            <div>
+                <h4 class="special-instructions item-subhead">Add Special Instructions</h4>
+                <textarea class="" name="notes"></textarea>
+            </div> 
+            </div><div class="theLine"></div>
+<!-- item 2 in sandwish -->
+        <div class="item_header">                                           
+            <div href="#" onclick="toggle_visibility1('foo1');">            
+                <h3>Philly Cheese Steak</h3>                  
+                <span>Marinated beef tenderloin sliced and sautéed with bell peppers, onions and mushrooms. Topped with provolone cheese</span>
+            </div>
+            <div class="item_price">9.00</div>
+            <div class="item-info-right"></div>
+        </div>
+            <div id="foo1">
+                <div class="order_buttons">                       
+                    <div class="qtyfield">
+                    <label>Quantity</label>
+                    <input type="text" name="quantity" class="quantity" value="1">
+                    </div>                         
+                    <button type="submit" class="btn btn-success">
+                    <span>Add to Order</span>
+                    </button>                          
+                </div>                                                  
+                <div>
+                <h4 class="special-instructions item-subhead">Add Special Instructions</h4>
+                <textarea class="" name="notes"></textarea>
+                </div></div><div class="theLine"></div>
+<!-- last item in sandwish -->
+                <div class="item_header">                                              
+                <div class="item-info" href="#" onclick="toggle_visibility2('foo2');"> 
+                <h3>Cuban</h3>                  
+                <span>Sweet ham, pulled pork, & homemade pickles served on Cuban bread with creamy garlic mustard</span>
+                </div>
+            <div class="item_price">11.00</div>
+                <div class="item-info-right">
+                </div>
+            </div>
+            <div id="foo2">
+                <div class="order_buttons">                       
+                    <div class="qtyfield">
+                    <label>Quantity</label>
+                    <input type="text" name="quantity" class="quantity" value="1">
+                    </div>                              
+                    <button type="submit" class="btn btn-success">
+                        <span>Add to Order</span>
+                    </button>                               
+                </div>                                                       
+            <div>
+                <h4 class="special-instructions item-subhead">Add Special Instructions</h4>
+                <textarea class="" name="notes"></textarea>
+            </div> 
+                </div><div class="theLine"></div>
+                </div> 
+            </div>
+                <div><div>
+            </form>
+            </li>
+        </div></div></div>
+        <div class="box6">
+<!-- I havent corrected it yet, the code below if reference from the website. --><!-- ................ -->
+
+
+            <!-- <div id="order" class="column">
+                <h2 class="clearfix order-header-container">
+            <div class="pull-right">
+                                    <a class="submit-link btn btn-success top-submit submit-button" style="display:none"><span class="order-header-text">Check Out</span> <i class="fa fa-shopping-cart"></i> <span class="item-count">(0)</span></a>
+                                <a class="toggle-header btn"><i class="fa fa-chevron-down"></i></a>
+            </div>
+            <div class="order-header">
+                <a class="btn toggle-cats" href="#categories" style="display: none"><i class="fa fa-chevron-left"></i></a>
+                <span>Your Order</span>
+            </div>
+        </h2>
+
+        <div class="order-details">
+            <div id="order-type-info" class="hidden" style="display: block;">
+                <div class="order-type-selector">
+                    Type: <span id="current-order-type">Takeout</span>
+                                </div>
+            </div>
+            <div id="order-time-info" class="hidden" style="display: block;">
+                <div class="order-time-selector">
+                                        Ordering for: <span id="current-order-time" class="hidden" style="display: inline;">ASAP <span class="asap-time-description">(about <span class="asap-time">30 minutes</span>)</span></span><br>
+
+                    <input type="hidden" name="is_group" id="is-group" value="0">
+                    <input type="hidden" name="is_group_owner" id="is-group-owner" value="0">
+                    <input type="hidden" name="group_payment_val" id="group-payment-val" value="">
+
+                    
+                    <div id="change-order-time" style="display: none;">
+                                                <input type="hidden" id="lead-time" value="30">
+                                                <input type="radio" name="ordering_for_sel" id="ordering_for_now" value="now" checked="checked"> <label for="ordering_for_now" id="asap-label">ASAP <span class="asap-time-description">(about <span class="asap-time">30 minutes</span>)</span></label><br>
+                        <input type="radio" name="ordering_for_sel" id="ordering_for_later" value="later"> <label for="ordering_for_later">Later</label><br>
+                    </div>
+                    
+                    <div id="order-time-later-date" class="hidden" style="display: none;">
+                        <p id="order-time-closed-text" class="hidden">Sorry, we're closed right now. When do you want to order?</p>
+                        <p>
+                                                        </p><form method="post">
+                                <input type="hidden" name="order_id" id="order_id" value="5ea48197902ad5393d7b23c7">
+                                <input type="hidden" name="coupon_id" id="coupon_id" value="">
+                                <input type="hidden" id="initial_ordering_for" value="now">
+                                <input type="hidden" id="ordering_for" name="ordering_for" value="now">
+                                <input type="hidden" id="min_date" value="4/25/2020">
+                                <input type="hidden" id="order_date_hidden" name="order_date" value="4/25/2020">
+                                <input type="text" name="order_date_ui" id="order_date" value="4/25/2020" class="hasDatepicker">
+                                <select name="eta" id="eta"><option value="3:00 PM">3:00 PM</option><option value="3:15 PM">3:15 PM</option><option value="3:30 PM">3:30 PM</option><option value="3:45 PM">3:45 PM</option><option value="4:00 PM">4:00 PM</option><option value="4:15 PM">4:15 PM</option><option value="4:30 PM">4:30 PM</option><option value="4:45 PM">4:45 PM</option><option value="5:00 PM">5:00 PM</option><option value="5:15 PM">5:15 PM</option><option value="5:30 PM">5:30 PM</option><option value="5:45 PM">5:45 PM</option><option value="6:00 PM">6:00 PM</option><option value="6:15 PM">6:15 PM</option><option value="6:30 PM">6:30 PM</option><option value="6:45 PM">6:45 PM</option><option value="7:00 PM">7:00 PM</option><option value="7:15 PM">7:15 PM</option><option value="7:30 PM">7:30 PM</option><option value="7:45 PM">7:45 PM</option></select>
+                                <input type="button" name="submit_btn" id="submit_ordering" value="Ok">
+                            </form>
+                                                    <p></p>
+                    </div>
+                </div>
+            </div>
+            <div id="order_items"><p>Your order is empty.</p></div>
+
+                                                <a class="submit-link btn btn-large btn-success submit-button" style="display:none">Check Out</a>
+                                            
+                    </div>
+        
+                    <div id="account-info">
+                                                            <h2 id="members-head">Members</h2>
+                        <div id="login-container">
+                            <p><a href="javascript:void(0);" id="login-link">Already registered? Sign in.</a></p>
+                        </div>
+                                                </div>
+        
+        <div class="mobile-restaurant-info" style="display: none;">
+            <h2 id="restaurant-info-head">Location Info</h2>
+            <div class="mobile-restaurant-details">
+                <div id="mobile-restaurant-name">Hamilton's Food &amp; Spirits / Pizzeria</div>
+                <div class="mobile-restaurant-detail">243 N Hamilton St</div>
+                <div class="mobile-restaurant-detail">Dalton, GA 30720</div>
+                <div class="mobile-restaurant-detail">(706) 270-0467</div>
+            </div>
+        </div>
+
+                    <div class="get-directions-menu map-features">
+                <a class="get-directions-link" href="http://maps.google.com/maps?daddr=34.77343, -84.968223" target="_blank">Get Directions</a>
+            </div> -->
+       
+            <!-- </div> -->
+
+        </div>
+    </div>
+    <footer id="myfooter2" >
+        <li id="rightfont">© 2020 Hamilton's Restaurant Group Inc. Powered by Let's Eat.</li>
+        <li id="rightfont2">HAMILTON'S FOOD & SPIRITS & THE PIZZERIA AT HAMILTON'S is hiring.</li>
+    </footer>   
+    </body>
+</html>
